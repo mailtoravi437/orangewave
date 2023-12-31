@@ -22,13 +22,13 @@ const data = [
 
 const NetworkCard = () => {
   return (
-    <div className="flex flex-row flex-wrap p-8">
+    <div className="flex flex-row flex-wrap p-4 md:p-8">
+      {" "}
+      {/* Adjusted padding for mobile version */}
       {data.map((item, index) => (
         <div key={index} className="w-full md:w-1/3 p-4">
           <div className="items-center">
-            {" "}
-            {/* Applied border classes here */}
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-4 items-center">
               <img
                 src={item.icon}
                 className="flex w-14 h-14 justify-center items-center p-3.5 bg-Orange rounded-full"
@@ -37,7 +37,9 @@ const NetworkCard = () => {
                 {item.heading}
               </h3>
             </div>
-            <div className="flex flex-col mt-4">
+            <div className="flex flex-col mt-2 md:mt-4">
+              {" "}
+              {/* Adjusted margin for mobile version */}
               <p className="text-base font-medium opacity-65 font-montserrat">
                 {item.text}
               </p>

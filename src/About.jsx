@@ -4,10 +4,10 @@ import ArrowWhite from "./assets/ArrowWhite.svg";
 const About = () => {
   return (
     <div>
-      <section>
-        <div className="grid max-w-screen-xl py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+      <section className="min-h-screen py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div className="grid gap-8 lg:grid-cols-12">
           {/* Left Column - Text Content */}
-          <div className="lg:col-span-7 lg:bg-[#FCF7F3] px-8 flex items-center">
+          <div className="lg:col-span-7 lg:bg-[#FCF7F3] px-4 lg:px-8 flex items-center">
             <div className="max-w-2xl">
               <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white font-montserrat">
                 About Orange Wave

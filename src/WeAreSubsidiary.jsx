@@ -4,16 +4,16 @@ import CloudExtel from "./assets/CloudExtel.svg";
 const WeAreSubsidiary = () => {
   return (
     <div>
-      <section>
-        <div className="grid max-w-screen-xl py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+      <section className="min-h-screen">
+        <div className="grid max-w-screen-xl gap-8 px-4 py-8 mx-auto lg:py-16 lg:grid-cols-12">
           {/* Left Column - Text Content */}
-          <div className="lg:col-span-7 px-8 flex items-center">
+          <div className="lg:col-span-7 px-4 lg:px-8 flex items-center">
             <div className="max-w-2xl">
-              <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white font-montserrat">
+              <h1 className="mb-4 text-3xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight leading-none font-montserrat">
                 We’re subsidiary of{" "}
                 <span className="text-Orange">Cloudextel</span>
               </h1>
-              <p className="mb-6 text-gray-500 lg:mb-8 text-base font-medium dark:text-gray-400 font-montserrat">
+              <p className="mb-6 text-gray-500 lg:mb-8 text-base lg:text-lg font-medium dark:text-gray-400 font-montserrat">
                 Our robust infrastructure ensures reliable connectivity, minimal
                 downtime, and consistent performance, giving you peace of mind.
               </p>
@@ -27,8 +27,12 @@ const WeAreSubsidiary = () => {
           </div>
 
           {/* Right Column - Image */}
-          <div className="lg:col-span-5 ">
-            <img src={CloudExtel} className="h-auto w-auto" />
+          <div className="lg:col-span-5 flex items-center justify-center">
+            <img
+              src={CloudExtel}
+              className="h-auto w-full max-w-lg"
+              alt="CloudExtel"
+            />
           </div>
         </div>
       </section>
