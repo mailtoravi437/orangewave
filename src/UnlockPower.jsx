@@ -41,7 +41,7 @@ const UnlockPower = () => {
               Reliability
             </motion.p>
             <motion.button
-              className="mt-4 flex bg-white items-center px-6 py-4 gap-2 text-lg text-Black font-semibold leading-[130%]"
+              className="mt-4 flex bg-white items-center px-6 py-4 gap-2 text-lg text-Black font-semibold hover:gap-3 leading-[130%]"
               variants={buttonVariants}>
               Learn More{" "}
               <span>

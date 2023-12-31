@@ -98,7 +98,7 @@ const Why = () => {
               operations in the digital era.
             </motion.p>
             <motion.button
-              className="mt-4 flex bg-Orange items-center px-6 py-4 gap-2 text-lg text-White font-semibold leading-[130%]"
+              className="mt-4 flex bg-Orange items-center px-6 py-4 gap-2 hover:gap-3 text-lg text-White font-semibold leading-[130%]"
               variants={itemVariants}>
               Read More{" "}
               <span>

@@ -54,7 +54,7 @@ const About = () => {
                 operations in the digital era.
               </p>
               <motion.button
-                className="flex bg-Orange items-center px-6 py-4 gap-2 text-lg text-White font-semibold leading-[130%]"
+                className="flex bg-Orange items-center px-6 py-4 gap-2 text-lg text-White font-semibold hover:gap-3 leading-[130%]"
                 variants={textVariants}>
                 Learn More{" "}
                 <span>

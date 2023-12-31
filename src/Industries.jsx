@@ -44,7 +44,7 @@ const Industries = () => {
                 organizations, including but not limited to
               </motion.p>
               <motion.button
-                className="flex bg-Orange items-center px-6 py-4 gap-2 text-lg text-White font-semibold leading-[130%]"
+                className="flex bg-Orange items-center px-6 py-4 hover:gap-3 gap-2 text-lg text-White font-semibold leading-[130%]"
                 variants={textVariants}>
                 Read More{" "}
                 <span>
