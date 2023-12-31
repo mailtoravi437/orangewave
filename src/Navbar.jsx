@@ -20,6 +20,15 @@ const MotionDiv = motion.div;
 // Variants for the mobile menu animation
 const menuVariants = {
   hidden: { opacity: 0, y: -20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, staggerChildren: 0.1, delayChildren: 0.2 },
+  },
+};
+
+const menuItemVariants = {
+  hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
 };
 
@@ -83,19 +92,23 @@ export default function Navbar() {
                 className="sm:hidden col-span-12">
                 <div className="space-y-1 px-2 pb-3 pt-2">
                   {navigation.map((item) => (
-                    <Disclosure.Button
+                    <motion.div
                       key={item.name}
-                      as="a"
-                      href={item.href}
-                      className={classNames(
-                        item.current
-                          ? "bg-Orange text-white"
-                          : "text-white hover:text-white",
-                        "block rounded-md px-2 py-2  font-semibold text-lg"
-                      )}
-                      aria-current={item.current ? "page" : undefined}>
-                      {item.name}
-                    </Disclosure.Button>
+                      variants={menuItemVariants}
+                      className="mb-2">
+                      <Disclosure.Button
+                        as="a"
+                        href={item.href}
+                        className={classNames(
+                          item.current
+                            ? "bg-Orange text-white"
+                            : "text-white hover:text-white",
+                          "block rounded-md px-2 py-2  font-semibold text-lg"
+                        )}
+                        aria-current={item.current ? "page" : undefined}>
+                        {item.name}
+                      </Disclosure.Button>
+                    </motion.div>
                   ))}
                 </div>
               </MotionDiv>
