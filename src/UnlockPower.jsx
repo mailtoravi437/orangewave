@@ -1,28 +1,57 @@
+import { motion } from "framer-motion";
 import Arrow from "./assets/Arrow.svg";
 
 const UnlockPower = () => {
+  // Framer Motion Variants
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
+  const textVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 } },
+  };
+
+  const buttonVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.4 } },
+  };
+
   return (
-    <section className="bg-Orange min-h-screen">
+    <motion.section
+      className="bg-Orange min-h-screen"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div className="flex items-center justify-center h-full">
+        <motion.div
+          className="flex items-center justify-center h-full"
+          variants={textVariants}>
           <div className="mx-auto max-w-screen-md text-start">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl text-white font-montserrat font-extrabold leading-tight sm:leading-[130%]">
+            <motion.h1
+              className="text-4xl sm:text-5xl lg:text-6xl text-white font-montserrat font-extrabold leading-tight sm:leading-[130%]"
+              variants={textVariants}>
               Unlock the Power of Seamless Connectivity with Orange Wave
-            </h1>
-            <p className="text-base sm:text-lg mt-4 font-medium leading-[130%] text-white">
+            </motion.h1>
+            <motion.p
+              className="text-base sm:text-lg mt-4 font-medium leading-[130%] text-white"
+              variants={textVariants}>
               Transform Your Network Infrastructure for Enhanced Performance and
               Reliability
-            </p>
-            <button className="mt-4 flex bg-white items-center px-6 py-4 gap-2 text-lg text-Black font-semibold leading-[130%]">
+            </motion.p>
+            <motion.button
+              className="mt-4 flex bg-white items-center px-6 py-4 gap-2 text-lg text-Black font-semibold leading-[130%]"
+              variants={buttonVariants}>
               Learn More{" "}
               <span>
                 <img src={Arrow} alt="Arrow" />
               </span>
-            </button>
+            </motion.button>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

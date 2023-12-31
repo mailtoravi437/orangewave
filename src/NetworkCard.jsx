@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Cloud from "./assets/cloud.svg";
 import Lock from "./assets/lock.svg";
 import Setting from "./assets/setting.svg";
@@ -21,33 +22,42 @@ const data = [
 ];
 
 const NetworkCard = () => {
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
-    <div className="flex flex-row flex-wrap p-4 md:p-8">
-      {" "}
-      {/* Adjusted padding for mobile version */}
+    <motion.div
+      className="flex flex-row flex-wrap p-4 md:p-8"
+      variants={cardVariants}
+      initial="hidden"
+      animate="visible">
       {data.map((item, index) => (
-        <div key={index} className="w-full md:w-1/3 p-4">
+        <motion.div
+          key={index}
+          className="w-full md:w-1/3 p-4"
+          variants={cardVariants}>
           <div className="items-center">
-            <div className="flex flex-col md:flex-row gap-4 items-center">
-              <img
+            <motion.div className="flex flex-col md:flex-row gap-4 items-center">
+              <motion.img
                 src={item.icon}
                 className="flex w-14 h-14 justify-center items-center p-3.5 bg-Orange rounded-full"
+                whileHover={{ scale: 1.1 }}
               />
-              <h3 className="text-xl font-extrabold font-montserrat">
+              <motion.h3 className="text-xl font-extrabold font-montserrat">
                 {item.heading}
-              </h3>
-            </div>
-            <div className="flex flex-col mt-2 md:mt-4">
-              {" "}
-              {/* Adjusted margin for mobile version */}
-              <p className="text-base font-medium opacity-65 font-montserrat">
+              </motion.h3>
+            </motion.div>
+            <motion.div className="flex flex-col mt-2 md:mt-4">
+              <motion.p className="text-base font-medium opacity-65 font-montserrat">
                 {item.text}
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
