@@ -71,7 +71,7 @@ const Why = () => {
                     {item.heading}
                   </motion.h3>
                   <motion.p
-                    className="text-left font-medium text-base font-montserrat text-gray-900 opacity-65"
+                    className="text-left font-medium text-base font-montserrat text-gray-500 opacity-65"
                     variants={itemVariants}>
                     {item.text}
                   </motion.p>
@@ -88,7 +88,7 @@ const Why = () => {
               Why choose Orange Wave?
             </motion.h1>
             <motion.p
-              className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 font-medium text-base dark:text-gray-400 font-montserrat"
+              className="max-w-2xl mb-6  text-gray-500 lg:mb-8 font-medium text-base dark:text-gray-400 font-montserrat"
               variants={itemVariants}>
               Orange Wave, a subsidiary of Cloudextel, is a trusted provider of
               advanced networking solutions. We specialize in delivering
