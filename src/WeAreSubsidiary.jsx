@@ -11,7 +11,7 @@ const WeAreSubsidiary = () => {
             <div className="max-w-2xl">
               <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white font-montserrat">
                 We’re subsidiary of{" "}
-                <span className="bg-Orange">Cloudextel</span>
+                <span className="text-Orange">Cloudextel</span>
               </h1>
               <p className="mb-6 text-gray-500 lg:mb-8 text-base font-medium dark:text-gray-400 font-montserrat">
                 Our robust infrastructure ensures reliable connectivity, minimal
