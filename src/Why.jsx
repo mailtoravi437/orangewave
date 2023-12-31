@@ -62,7 +62,7 @@ const Why = () => {
                   <motion.img
                     src={item.image}
                     alt={item.heading}
-                    className="w-full h-64 object-cover rounded-lg mb-2"
+                    className="w-full h-64 object-cover rounded-2xl mb-2"
                     variants={itemVariants}
                   />
                   <motion.h3
@@ -80,7 +80,7 @@ const Why = () => {
             </motion.div>
           </div>
           <motion.div
-            className="lg:col-span-5 px-4 lg:px-8"
+            className="lg:col-span-5 px-4 lg:px-10"
             variants={containerVariants}>
             <motion.h1
               className="max-w-2xl mb-4 text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight leading-none dark:text-white font-montserrat"
