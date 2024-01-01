@@ -1,4 +1,4 @@
-]import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import ArrowWhite from "./assets/ArrowWhite.svg";
 import Expertise from "./assets/Expertise.svg";
 import TailoredSolution from "./assets/TailoredSolution.svg";
