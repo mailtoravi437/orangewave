@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+]import { motion } from "framer-motion";
 import ArrowWhite from "./assets/ArrowWhite.svg";
 import Expertise from "./assets/Expertise.svg";
 import TailoredSolution from "./assets/TailoredSolution.svg";
@@ -42,12 +42,6 @@ const Why = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  const imageVariants = {
-    hidden: { scale: 0 },
-    visible: { scale: 1 },
-    hover: { scale: 1.05, boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)" },
-  };
-
   return (
     <div>
       <motion.section
@@ -69,8 +63,7 @@ const Why = () => {
                     src={item.image}
                     alt={item.heading}
                     className="w-full h-64 object-cover rounded-2xl mb-2"
-                    variants={imageVariants}
-                    whileHover="hover"
+                    variants={itemVariants}
                   />
                   <motion.h3
                     className="text-left text-xl lg:text-2xl font-extrabold font-montserrat text-gray-900 mb-2"
