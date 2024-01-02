@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ArrowWhite from "./assets/ArrowWhite.svg";
 import CloudExtel from "./assets/CloudExtel.svg";
+import Vector from "./assets/Vector.svg";
 
 const WeAreSubsidiary = () => {
   const containerVariants = {
@@ -25,7 +26,7 @@ const WeAreSubsidiary = () => {
   return (
     <div>
       <motion.section
-        className="min-h-fit"
+        className="min-h-fit relative"
         variants={containerVariants}
         initial="hidden"
         animate="visible">
@@ -69,6 +70,11 @@ const WeAreSubsidiary = () => {
             />
           </motion.div>
         </div>
+        <motion.img
+          src={Vector}
+          className="h-auto bottom-0 absolute right-0"
+          alt="Vector"
+        />
       </motion.section>
     </div>
   );
