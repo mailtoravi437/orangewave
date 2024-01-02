@@ -25,7 +25,7 @@ const WeAreSubsidiary = () => {
   return (
     <div>
       <motion.section
-        className="min-h-screen"
+        className="min-h-fit"
         variants={containerVariants}
         initial="hidden"
         animate="visible">

@@ -6,6 +6,7 @@ import About from "./About";
 import Why from "./Why";
 import Industries from "./Industries";
 import WeAreSubsidiary from "./WeAreSubsidiary";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Why />
       <Industries />
       <WeAreSubsidiary />
+      <Footer />
     </>
   );
 }
