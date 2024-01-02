@@ -2,8 +2,8 @@ import pointer from "./assets/pointer.svg";
 const Footer = () => {
   return (
     <div>
-      <footer className="p-4 bg-Black md:p-8 lg:p-10 container">
-        <div className="mx-auto grid grid-cols-12 gap-4 max-w-screen-xl py-10 text-center">
+      <footer className="p-4 bg-Black max-w-screen-xl md:p-8 lg:p-10 container">
+        <div className="mx-auto grid grid-cols-12 gap-4  py-10 text-center">
           <div className="col-span-12 sm:col-span-4">
             <a
               href="#"
